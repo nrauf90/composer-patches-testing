@@ -1,0 +1,22 @@
+diff --git a/vendor/nrauf90/greeting/src/Index.php b/vendor/nrauf90/greeting/src/Index.php
+index dc94f0e..e339456 100644
+--- a/vendor/nrauf90/greeting/src/Index.php
++++ b/vendor/nrauf90/greeting/src/Index.php
+@@ -6,11 +6,17 @@ class Index
+ {
+     protected $name;
+
++    /**
++     * @param $name
++     */
+     public function __construct($name)
+     {
+         $this->name = $name;
+     }
+
++    /**
++     * @return string
++     */
+     public function getMessage(){
+         return "Welcome ".$this->name;
+     }

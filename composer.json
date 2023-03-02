@@ -1,0 +1,20 @@
+{
+    "require": {
+        "nrauf90/greeting": "@dev"
+    },
+    "extra": {
+        "patches": {
+            "nrauf90/greeting": {
+                "update: create name setter": "patches/composer/PR-1.diff"
+            }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "cweagans/composer-patches": true
+        }
+    },
+    "require-dev": {
+        "cweagans/composer-patches": "^1.7"
+    }
+}
